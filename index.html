@@ -3,14 +3,41 @@
   <head>
     <meta charset="UTF-8">
     <title>Contador de Cliques</title>
-    <link rel="stylesheet" href="estilo.css">
+    <style>
+      button {
+        margin: 10px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      
+      #botao-azul {
+        background-color: #007bff;
+        color: #fff;
+      }
+      
+      #botao-vermelho {
+        background-color: #dc3545;
+        color: #fff;
+      }
+      
+      #contador-azul, #contador-vermelho {
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <button id="botao-azul" type="button">Botão Azul</button>
-    <button id="botao-vermelho" type="button">Botão Vermelho</button>
+    <button id="botao-azul">Botão Azul</button>
+    <button id="botao-vermelho">Botão Vermelho</button>
     <p>Clique no botão para contar!</p>
     <p>Clique no botão azul: <span id="contador-azul">0</span></p>
     <p>Clique no botão vermelho: <span id="contador-vermelho">0</span></p>
     <script src="contador.js"></script>
   </body>
 </html>
+
