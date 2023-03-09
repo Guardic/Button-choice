@@ -1,18 +1,16 @@
-// Atribui constantes aos elementos HTML
-const botaoAzul = document.getElementById("botao-azul");
-const botaoVermelho = document.getElementById("botao-vermelho");
-const contadorAzul = document.getElementById("contador-azul");
-const contadorVermelho = document.getElementById("contador-vermelho");
+var contadorAzul = 0;
+var contadorVermelho = 0;
 
-// Atribui eventos de clique aos botões
-botaoAzul.addEventListener("click", () => {
+// Atribui um evento de clique ao botão azul
+document.getElementById("botao-azul").addEventListener("click", function() {
   // Incrementa o contador do botão azul
-  let valor = parseInt(contadorAzul.textContent);
-  contadorAzul.textContent = ++valor;
+  contadorAzul++;
+  document.getElementById("contador-azul").innerHTML = contadorAzul;
 });
 
-botaoVermelho.addEventListener("click", () => {
+// Atribui um evento de clique ao botão vermelho
+document.getElementById("botao-vermelho").addEventListener("click", function() {
   // Incrementa o contador do botão vermelho
-  let valor = parseInt(contadorVermelho.textContent);
-  contadorVermelho.textContent = ++valor;
+  contadorVermelho++;
+  document.getElementById("contador-vermelho").innerHTML = contadorVermelho;
 });
